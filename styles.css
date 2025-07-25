@@ -1,0 +1,269 @@
+body{
+    background-color: #21000f;
+    color: #eae7dc;
+    overflow: scroll;
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color:#450b1e;
+    opacity: 85%;
+    backdrop-filter: blur(10px);   
+}
+li{
+    list-style: none;
+    transition: 1s;
+}
+li:hover{
+    font-size: 40px;
+    transition: 1s;
+}
+nav ul{
+    color: #eae7dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    padding: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color:#eae7dc;
+}
+
+#curriculum{
+    border-radius: 20%;
+    color: white;
+}
+#foto {
+    border-radius: 50%;
+    border: 4px solid #eae7dc;
+}
+
+section{
+    padding-left: 10%;
+    font-family: 'Montserrat', sans-serif;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    scroll-snap-align: start;
+}
+
+#sobre{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#texto{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
+
+#texto_h{
+    display: flex;
+    text-align: center;
+    width: 60%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 5%;
+    z-index: 1000;
+    background-color: #450b1e;
+    opacity: 0.7;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#contato {
+    padding: 10px;
+    flex-direction: row;
+    gap: 15%;
+    text-decoration: none;
+}
+
+#contato a{
+    text-decoration: none;
+    color: #eae7dc;
+    font-size: 20px;
+    transition: 1s;
+}
+
+#contato a:hover{
+    font-size: 23px;
+    transition: 1s;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    nav ul{
+        font-size: 19px;
+        gap: 9%;
+    }
+
+    #sobre{
+        padding-top: 0%;
+    }
+
+    #foto{
+        width: 200px;
+    }
+
+    #sobre{
+        font-size: 15px;
+    }
+
+    #habilidades{
+        font-size: 15px;
+    }
+
+    #contato h1{
+        font-size: 25px;
+    }
+
+    #contato{
+        gap: 5%;
+    }
+}
+@media(min-width:340px) and (max-width: 480px){
+    nav{
+        height: 10%;
+    }
+    nav ul{
+        gap: 5%;
+        font-size: 20px;
+    }
+    nav ul li:hover{
+        font-size: 25px
+    }
+    #sobre{
+        margin-top: 9%;
+        font-size: 14px;
+    }
+    #foto{
+        width: 150px;
+    }
+    #habilidades{
+        font-size: 14px;
+    }
+    #contato{
+        gap: 10%;
+    }
+    #contato h1{
+        font-size: 18px;
+    }
+    #contato a{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px){
+    nav{
+        height: 10%;
+    }
+    nav ul{
+        font-size: 30px;
+        gap: 15%;
+    }
+    #sobre{
+        font-size: 20px;
+    }
+    #habilidades{
+        font-size: 20px;
+    }
+    #contato h1{
+        font-size: 30px;
+    }
+    #contato{
+        gap: 9%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    nav ul{
+        gap: 10%;
+        font-size: 38px;
+    }
+    #sobre{
+        margin-top: 8%;
+    }
+    #foto{
+        width: 300px;
+    }
+    #sobre{
+        font-size: 25px;
+    }
+    #sobre h1 {
+        font-size: 40px;
+    }
+    #habilidades{
+        font-size: 25px;
+    }
+    #contato{
+        gap: 12%;
+    }
+    #contato h1{
+        font-size: 35px;
+    }
+    #contato a{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px){
+    nav ul{
+        gap: 12%
+    }
+    #sobre h1{
+        font-size: 30px;
+    }
+    #foto{
+        width: 250px;
+    }
+    #sobre{
+        font-size: 20px;
+    }
+    #habilidades{
+        font-size: 20px;
+    }
+    #contato h1{
+        font-size: 35px;
+    }
+    #contato a{
+        font-size: 25px
+    }
+    #contato a:hover{
+        font-size: 28px
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px){
+    #sobre{
+        margin-top: 1%;
+    }
+}
